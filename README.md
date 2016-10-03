@@ -1,12 +1,14 @@
-php init
 
+## Instruction
+```
+php init (set development mode)
 composer install
-
-common/config/main-local set DB config
-
+common/config/main-local (set DB config)
 yii migrate
+```
 
-Virtual host example
+##Virtual host example
+```
 <VirtualHost *:80>
    DocumentRoot "C:\xampp\htdocs\meet-api\rest\web"
    ServerName meet-api.loc
@@ -18,3 +20,4 @@ Virtual host example
        Allow from all
    </Directory>
 </VirtualHost>
+```
