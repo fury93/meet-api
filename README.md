@@ -2,7 +2,7 @@
 ## Instruction
 ```
 php init (set development mode)
-composer install
+php composer.phar install
 common/config/main-local (set DB config)
 yii migrate
 ```
