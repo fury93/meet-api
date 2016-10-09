@@ -51,6 +51,17 @@ return [
                     'controller' =>  'v1/user',
                     'pluralize' => false,
                 ],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' =>  'v1/site',
+                    'pluralize' => false,
+                    'extraPatterns' => [
+                        'GET auth' => 'auth',
+                        'GET test' => 'test',
+                    ]
+                ],
+
+                //'GET v1/auth/test' => 'v1/auth/test',
             ],
         ],
     ],
